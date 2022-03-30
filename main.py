@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from PIL import Image
+#from PIL import Image
 import time
 
 st.title("streamlit・超入門")
@@ -44,10 +44,10 @@ df = pd.DataFrame(
 
 st.map(df)
 
-if st.checkbox('Show Image'):
-    st.write('Display Image')
-    img = Image.open('sample.jpg')
-    st.image(img,caption = 'TestIMAGE',use_column_width=True)
+#if st.checkbox('Show Image'):
+#    st.write('Display Image')
+#    img = Image.open('sample.jpg')
+#    st.image(img,caption = 'TestIMAGE',use_column_width=True)
 
 option = st.selectbox(
     'あなたが好きな数字を教えてください',
